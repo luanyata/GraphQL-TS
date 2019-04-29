@@ -28,7 +28,7 @@ const resolvers = {
     },
     Mutation: {
         createUser: (parent, args) => {
-            const newUser = {id: users.length + 1, ...args};//Object.assign({id: users.length + 1}, args);
+            const newUser = {id: users.length + 1, ...args};
             users.push(newUser);
             return newUser;
         }
