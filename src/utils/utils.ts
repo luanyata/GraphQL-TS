@@ -36,7 +36,7 @@ export const onListening = (server: Server) => {
 export const handleError = (error: Error) => {
     let errorMessage: string = `${error.name}: ${error.message}`;
     let env: string = process.env.NODE_ENV;
-    if (env !== 'test' && env !== 'pipelines') {
+    if (env !== 'user.schema.graphqls' && env !== 'pipelines') {
         console.log(errorMessage);
     }
     return Promise.reject(new Error(errorMessage));
