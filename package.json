@@ -38,6 +38,6 @@
     "graphql-tools": "^4.0.4",
     "lodash": "^4.17.11",
     "mysql2": "^1.6.5",
-    "sequelize": "^5.8.7"
+    "sequelize": "^5.15.1"
   }
 }
